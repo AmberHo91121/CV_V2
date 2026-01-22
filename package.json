@@ -1,0 +1,19 @@
+{
+  "name": "cv-js",
+  "version": "1.0.0",
+  "description": "Personal CV portfolio built with vanilla HTML, CSS, and JavaScript",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve ."
+  },
+  "keywords": [
+    "cv",
+    "portfolio",
+    "vanilla-js"
+  ],
+  "author": "AmberHo",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}

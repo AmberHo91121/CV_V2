@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmberHo - CV</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#works" class="nav-link">Works</a>
+            <a href="#future" class="nav-link">Future</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Top Section: About and Photo -->
+        <div class="top-section">
+            <!-- About Section (Top Left) -->
+            <section id="about" class="about-section">
+                <h1 class="section-title">About</h1>
+                <div class="about-text">
+                    <p><strong>Email:</strong> amberho91121@gmail.com</p>
+                    <p><strong>生日:</strong> 2002.01.21</p>
+                    <p><strong>星座:</strong> 太陽水瓶+上升牡羊</p>
+                    <p><strong>老家:</strong> 新竹</p>
+                    <p><strong>MBTI:</strong> INTP-T</p>
+                </div>
+            </section>
+
+            <!-- Photo Section (Top Right) -->
+            <div class="photo-section">
+                <img src="profile.JPG" alt="AmberHo Profile Photo">
+            </div>
+        </div>
+
+        <!-- Experience Section (Middle Left) -->
+        <section id="experience" class="experience-section">
+            <h1 class="section-title">Experience</h1>
+            <div class="timeline-container">
+                <div class="timeline-years" id="timelineYears"></div>
+                <div class="timeline-labels">
+                </div>
+            </div>
+            <!-- Expandable content will be dynamically created -->
+            <div class="experience-content" id="experienceContent"></div>
+        </section>
+
+        <!-- Works Section (Between Experience and Future) -->
+        <section id="works" class="works-section">
+            <h1 class="section-title">Works</h1>
+            <div class="works-timeline">
+                <div class="work-item" data-work="inlife">
+                    <img class="work-thumb" src="cover01.png" alt="InLife 興趣養成APP">
+                    <span class="work-title">InLife 興趣養成APP</span>
+                </div>
+                <div class="work-item" data-work="koselig">
+                    <img class="work-thumb" src="cover02.png" alt="Koselig 北歐中古家具零售服務設計">
+                    <span class="work-title">Koselig 北歐中古家具零售服務設計</span>
+                </div>
+                <div class="work-item" data-work="resort">
+                    <img class="work-thumb" src="cover04.jpg" alt="瑞穗天合飯店服務設計">
+                    <span class="work-title">瑞穗天合飯店服務設計</span>
+                </div>
+                <div class="work-item" data-work="other">
+                    <img class="work-thumb" src="cover03.jpg" alt="其他作品">
+                    <span class="work-title">其他</span>
+                </div>
+            </div>
+            <!-- Popup will be dynamically created -->
+            <div class="popup works-popup" id="worksPopup"></div>
+        </section>
+
+        <!-- Future Section (Below Experience) -->
+        <section id="future" class="future-section">
+            <h1 class="section-title">Future</h1>
+            <div class="future-timeline">
+                <div class="future-item" data-term="short">
+                    <span>Short Term</span>
+                </div>
+                <div class="future-item" data-term="mid">
+                    <span>Mid Term</span>
+                </div>
+
+                <div class="future-item" data-term="long">
+                        <span>Long Term</span>
+                </div>
+            </div>
+            <!-- Expandable content will be dynamically created -->
+            <div class="future-content" id="futureContent"></div>
+        </section>
+
+        <!-- Popup Overlay for mobile -->
+        <div class="popup-overlay" id="popupOverlay"></div>
+
+        <!-- Name Footer (Bottom Left) -->
+        <div class="name-footer">
+            <h1>AmberHo</h1>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
